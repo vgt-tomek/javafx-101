@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<BorderPane fx:id="root" xmlns:fx="http://javafx.com/fxml" fx:controller="pl.vgtworld.javafx.fxml.modularapp.MainController">
+    <top>
+        <HBox>
+            <Button text="first" onAction="#firstPressed"/>
+            <Button text="second" onAction="#secondPressed"/>
+        </HBox>
+    </top>
+</BorderPane>
