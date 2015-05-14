@@ -3,7 +3,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Button?>
-<BorderPane fx:id="root" xmlns:fx="http://javafx.com/fxml" fx:controller="pl.vgtworld.javafx.fxml.modularapp.MainController">
+<BorderPane styleClass="main-window" fx:id="root" xmlns:fx="http://javafx.com/fxml" fx:controller="pl.vgtworld.javafx.fxml.modularapp.MainController">
     <top>
         <HBox>
             <Button text="first" onAction="#firstPressed"/>

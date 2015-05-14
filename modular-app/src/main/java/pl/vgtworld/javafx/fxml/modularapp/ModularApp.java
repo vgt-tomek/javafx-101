@@ -17,6 +17,7 @@ public class ModularApp extends Application
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("main-window.fxml"));
         Scene scene = new Scene(root, 800, 600);
+        scene.getStylesheets().add(ModularApp.class.getResource("style.css").toExternalForm());
         primaryStage.setTitle("Modular App");
         primaryStage.setScene(scene);
         primaryStage.show();
