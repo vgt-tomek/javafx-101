@@ -19,7 +19,8 @@ public class MainController {
 		root.setCenter(firstPane);
 	}
 
-	public void secondPressed(ActionEvent actionEvent) {
-		//TODO
+	public void secondPressed(ActionEvent actionEvent) throws IOException {
+		BorderPane firstPane = loader.load(getClass().getResource("second/second.fxml"));
+		root.setCenter(firstPane);
 	}
 }
