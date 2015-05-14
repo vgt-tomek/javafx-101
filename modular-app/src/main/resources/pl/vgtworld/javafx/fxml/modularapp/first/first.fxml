@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.control.Label?>
-<BorderPane>
+<?import java.net.URL?>
+<BorderPane styleClass="first-pane">
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
     <center>
         <Label text="First pane"></Label>
     </center>
