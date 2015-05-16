@@ -15,7 +15,7 @@ public class ContactsBook extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		MainView applicationView = new MainView();
-		Scene scene = new Scene(applicationView.getView());
+		Scene scene = new Scene(applicationView.getView(), 800, 600);
 		primaryStage.setTitle("Contacts Book");
 		primaryStage.setScene(scene);
 		primaryStage.show();

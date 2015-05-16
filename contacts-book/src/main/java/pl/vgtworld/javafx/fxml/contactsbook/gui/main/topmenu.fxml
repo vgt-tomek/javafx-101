@@ -3,7 +3,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Button?>
 <?import javafx.geometry.Insets?>
-<HBox xmlns:fx="http://javafx.com/fxml" fx:controller="pl.vgtworld.javafx.fxml.contactsbook.gui.topmenu.TopmenuPresenter">
+<HBox>
     <padding><Insets top="5" right="5" bottom="5" left="5"/></padding>
     <Button text="New contact"/>
 </HBox>

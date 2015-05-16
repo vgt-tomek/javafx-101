@@ -2,4 +2,7 @@
 
 <?import javafx.scene.layout.BorderPane?>
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:id="rootPane" fx:controller="pl.vgtworld.javafx.fxml.contactsbook.gui.main.MainPresenter">
+    <top>
+        <fx:include source="topmenu.fxml"/>
+    </top>
 </BorderPane>
