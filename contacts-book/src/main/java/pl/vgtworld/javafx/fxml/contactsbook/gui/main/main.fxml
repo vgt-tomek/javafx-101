@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <BorderPane xmlns:fx="http://javafx.com/fxml" fx:id="rootPane" fx:controller="pl.vgtworld.javafx.fxml.contactsbook.gui.main.MainPresenter">
     <top>
-        <fx:include source="topmenu.fxml"/>
+        <HBox>
+            <padding><Insets top="5" right="5" bottom="5" left="5"/></padding>
+            <Button text="New contact" onAction="#displayNewContactForm"/>
+        </HBox>
     </top>
 </BorderPane>
