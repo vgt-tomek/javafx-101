@@ -6,6 +6,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
 import pl.vgtworld.javafx.fxml.contactsbook.gui.contactform.ContactFormController;
+import pl.vgtworld.javafx.fxml.contactsbook.seervices.contacts.ContactsService;
 
 import java.io.IOException;
 import java.net.URL;
@@ -16,6 +17,8 @@ public class MainController implements Initializable {
 	@FXML
 	private BorderPane rootPane;
 
+	private ContactsService contactsService = new ContactsService();
+
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 	}
@@ -24,7 +27,7 @@ public class MainController implements Initializable {
 		FXMLLoader loader = new FXMLLoader(ContactFormController.class.getResource("contactform.fxml"));
 		Parent view = loader.load();
 		ContactFormController controller = loader.<ContactFormController>getController();
-		controller.init(this);
+		controller.init(this, contactsService);
 		rootPane.setCenter(view);
 	}
 

@@ -16,7 +16,7 @@
     <Label text="Notes:"/>
     <TextArea fx:id="notes"/>
     <HBox>
-        <Button text="Save"/>
+        <Button text="Save" onAction="#saveContact"/>
         <Button text="Cancel" onAction="#cancelContactCreation"/>
     </HBox>
 </VBox>
