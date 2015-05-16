@@ -7,6 +7,6 @@
         <URL value="@style.css"/>
     </stylesheets>
     <center>
-        <Label text="First pane"></Label>
+        <Label text="First pane"/>
     </center>
 </BorderPane>

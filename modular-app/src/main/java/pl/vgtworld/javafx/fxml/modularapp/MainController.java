@@ -15,12 +15,12 @@ public class MainController {
 	private FXMLLoader loader = new FXMLLoader();
 
 	public void firstPressed(ActionEvent actionEvent) throws IOException {
-		BorderPane firstPane = loader.load(getClass().getResource("first/first.fxml"));
+		BorderPane firstPane = FXMLLoader.load(getClass().getResource("first/first.fxml"));
 		root.setCenter(firstPane);
 	}
 
 	public void secondPressed(ActionEvent actionEvent) throws IOException {
-		BorderPane firstPane = loader.load(getClass().getResource("second/second.fxml"));
-		root.setCenter(firstPane);
+		BorderPane secondPane = FXMLLoader.load(getClass().getResource("second/second.fxml"));
+		root.setCenter(secondPane);
 	}
 }
