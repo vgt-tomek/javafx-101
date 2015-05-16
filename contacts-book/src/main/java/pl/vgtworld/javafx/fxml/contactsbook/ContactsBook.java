@@ -1,10 +1,11 @@
 package pl.vgtworld.javafx.fxml.contactsbook;
 
-import com.airhacks.afterburner.injection.Injector;
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import pl.vgtworld.javafx.fxml.contactsbook.gui.main.MainView;
+import pl.vgtworld.javafx.fxml.contactsbook.gui.main.MainController;
 
 public class ContactsBook extends Application {
 
@@ -14,17 +15,12 @@ public class ContactsBook extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		MainView applicationView = new MainView();
-		Scene scene = new Scene(applicationView.getView(), 800, 600);
+		FXMLLoader loader = new FXMLLoader(MainController.class.getResource("main.fxml"));
+		Parent view = loader.load();
+		Scene scene = new Scene(view, 800, 600);
 		primaryStage.setTitle("Contacts Book");
 		primaryStage.setScene(scene);
 		primaryStage.show();
-	}
-
-	@Override
-	public void stop() throws Exception {
-		super.stop();
-		Injector.forgetAll();
 	}
 
 }

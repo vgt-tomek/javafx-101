@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:id="rootPane" fx:controller="pl.vgtworld.javafx.fxml.contactsbook.gui.main.MainPresenter">
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:id="rootPane" fx:controller="pl.vgtworld.javafx.fxml.contactsbook.gui.main.MainController">
     <top>
         <HBox>
             <padding><Insets top="5" right="5" bottom="5" left="5"/></padding>
