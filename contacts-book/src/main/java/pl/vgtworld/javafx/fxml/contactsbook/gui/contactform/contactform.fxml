@@ -17,6 +17,6 @@
     <TextArea fx:id="notes"/>
     <HBox>
         <Button text="Save"/>
-        <Button text="Cancel"/>
+        <Button text="Cancel" onAction="#cancelContactCreation"/>
     </HBox>
 </VBox>
