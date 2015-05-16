@@ -24,7 +24,7 @@ public class MainController implements Initializable {
 		FXMLLoader loader = new FXMLLoader(ContactFormController.class.getResource("contactform.fxml"));
 		Parent view = loader.load();
 		ContactFormController controller = loader.<ContactFormController>getController();
-		controller.setMainController(this);
+		controller.init(this);
 		rootPane.setCenter(view);
 	}
 

@@ -22,7 +22,7 @@ public class ContactFormController {
 
 	private MainController mainController;
 
-	public void setMainController(MainController mainController) {
+	public void init(MainController mainController) {
 		this.mainController = mainController;
 	}
 
